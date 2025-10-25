@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse
 
 from .routers import router
 
@@ -18,3 +19,16 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/", response_class=HTMLResponse)
+def read_root():
+    return """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    </head>
+    <body>
+    </body>
+    </html>
+    """
