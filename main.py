@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 
-from api.data import load_prompts
+# from api.data import load_prompts
 from api.models import Result, Vote
 
 app = FastAPI()
@@ -21,7 +21,7 @@ app.add_middleware(
 )
 
 
-prompts = load_prompts()
+prompts = []
 
 current = 0
 matchups = [(p1, p2) for i, p1 in enumerate(prompts) for j, p2 in enumerate(prompts) if i != j]
