@@ -1,6 +1,6 @@
 import json
 import os
-from ..models import Prompt
+from models import Prompt
 
 def load_prompts():
     dir = os.path.dirname(__file__)
