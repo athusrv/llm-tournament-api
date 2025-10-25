@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "text": "Explain what artificial intelligence (AI) is in one clear sentence.",
+        "response": "Artificial intelligence is the ability of machines or software to perform tasks that normally require human intelligence, such as reasoning, learning, and problem-solving."
+    },
+    {
+        "id": 2,
+        "text": "Define artificial intelligence (AI) in technical terms suitable for a computer science student.",
+        "response": "Artificial intelligence is a branch of computer science focused on creating algorithms and models that enable machines to perceive their environment, process data, learn from experience, and make autonomous decisions to achieve specific goals."
+    },
+    {
+        "id": 3,
+        "text": "Describe artificial intelligence (AI) using an everyday analogy that makes it easy for anyone to understand.",
+        "response": "AI is like a digital apprentice that watches how humans solve problems, learns the patterns, and then starts doing similar tasks on its own — sometimes even faster or more accurately."
+    }
+]
