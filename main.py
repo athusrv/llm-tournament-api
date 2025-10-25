@@ -2,12 +2,17 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routers import router
 
-app = FastAPI()
+app = FastAPI(
+    title="LLM Tournament API",
+    description="API for managing LLM prompt tournaments",
+    version="1.0.0",
+)
 app.include_router(router)
 
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "https://llmtournament-api.vercel.app"
 ]
 
 app.add_middleware(
