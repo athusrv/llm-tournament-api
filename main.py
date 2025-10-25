@@ -12,7 +12,7 @@ app.include_router(router)
 origins = [
     "http://localhost",
     "http://localhost:3000",
-    "https://llmtournament-api.vercel.app"
+    "https://llm-tournament-web.vercel.app"
 ]
 
 app.add_middleware(
